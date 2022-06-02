@@ -1,0 +1,57 @@
+Node js.
+NO ES:
+    - Un lenguaje de programaciòn
+    - javascript
+    - un lenguaje de servidor
+    - Orientado al backend
+
+SI ES:
+Un entorno de ejecuciòn de javascript fuera del navegador.
+
+================================================================================================================
+INTERPRETACIÒN vs COMPILACIÒN
+
+- INTERPRETACIÒN, se hace en tiempo real (browser ò node junto con su (javascript engine/interprete))
+javascript ENGINE: Entorno en donde se interpreta el lenguaje
+
+* Instrucciones de js(lenguaje de alto nivel), pasan a:
+
+* Assembler -> traducir las instrucciones de alto nivel y pasarlas a direcciones en memoria (bits, bytes), pasan a:
+
+* machine code(lenguaje maquina) = 0101010 => pulsos electricos/Binario, pasan a ser administrados por el procesador.
+
+
+- COMPILACIÒN, se hace la traduccion desde alto nivel a machine code, pero se crea un archivo .exe con los "binarios"
+
+================================================================================================================
+javascript, DEFINICION:
+
+Un lenguaje orientado a prototipos. De alto nivel. Tipado dinàmico. Que trabaja en un solo hilo del procesador de forma concurrente.
+
+================================================================================================================
+TIPADO DINÀMICO vs ESTÀTICO
+
+var tres = 'tres' -> no especìfica el tipo de dato, tipado debil/dinàmico
+
+int X = 10; -> especìfica el tipo de dato, tipado fuerte/estàtico
+
+===============================================================================================================
+Procesador
+2 componentes fundamentales:
+
+* Core/nùcleo(hardware):
+
+Es un procesador, dentro del procesador(sub procesadores). Se encarga de administrar procesos(programas)
+- Cada nùcleo, va administrar un programa y si tienes màs de uno, los programas se van a ejecutar en paralelo/al mismo tiempo.
+
+* Thread/hilo/procesadores lògicos(software):
+
+Encargados de administrar las tareas/instrucciones del proceso. Las tareas se pueden administrar y ejecutar de forma:
+
+- SECUENCIAL. Una instrucciòn a la vez,
+
+- PARALELA. Una serie de instrucciones que se reparten en màs de un hilo para ejecutar varias tareas al mismo tiempo y acabar màs rapido
+
+- CONCURRENTE. Una serie de instrucciones que simulan paralelismo, ejecutandose de forma estrategica dandole prioridad a algunas instrucciones con 
+respecto a otras. Esta prioridad, la suele establecer el lenguaje ò el programador. En javascript, lo hace el event loop que puede vivir en el
+browser ò en node y depende de còmo el programador domine el flujo, para no bloquear el hilo.
