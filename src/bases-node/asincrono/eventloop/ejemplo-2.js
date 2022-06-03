@@ -1,7 +1,6 @@
 "use strict"
 
 // ¿Què se ejecuta primero?
-
 console.log("inicio")
 
 setTimeout(() => {

@@ -9,7 +9,7 @@ function () {
 }
 
 //========================================================
-//funciones anònimas autoejecutables/IIFE. Siempre llevan ;
+//funciones anònimas autoejecutables/IIFE(Immediately invoked function expression). Siempre llevan ;
 (function () {
     console.log('holi')
 })();
