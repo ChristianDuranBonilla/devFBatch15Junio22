@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "nombre": "pikachu",
     "color": "amarillo",
     "habilidades": {
@@ -9,6 +10,7 @@
     },
     "id pokemon": "jaja"
   }, {
+    "id": 2,
     "nombre": "charizard",
     "color": "naranja",
     "habilidades": {
