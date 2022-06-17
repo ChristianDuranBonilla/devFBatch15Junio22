@@ -1,16 +1,15 @@
 "use strict"
 
+//TRANSPILADOR
+//webpack
 //babel
-import { v4 as uuidv4 } from './uuid';
-
+//browserify
+// import { v4 as uuidv4 } from './uuid';
+const { v4: uuidv4 } = require('uuid');
 const d = document
-
 const input_todo = d.getElementById("input-todo")
-
 const btn_add = d.getElementById("btn-add")
-
 const content_w = d.getElementById("content-wrapper")
-
 const URL = "http://localhost:3000/data"
 
 const printTasks = (task, id) => {
@@ -75,7 +74,6 @@ const putData = (task, id) => {
     .then(data => console.log(data))
     .catch(error => console.error(error))
 }
-
 const deleteData = (id) => {
   fetch(URL + "/" + id, {
     method: "DELETE",
@@ -92,7 +90,7 @@ btn_add.addEventListener("click", () => {
   postData(input_todo.value)
 })
 
-//Mejorar la aplicaciòn:
+//Mejorar la aplicaciòn (¿Què sigue?):
 //  - Interfaz gràfica
 //  - Cambiar then, por async await
 //  - crear una api con express
