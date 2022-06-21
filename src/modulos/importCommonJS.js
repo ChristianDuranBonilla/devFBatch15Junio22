@@ -8,6 +8,10 @@ console.log(calculadora(3, 8));
 console.log(datos);
 console.log(objeto);
 
+const tools = new objeto.Herramientas()
+
+console.log(tools.bandera2);
+
 // console.log("error ", error);
 // console.log("calculadora ", calculadora(5, 5));
 // console.log("datos ", datos);

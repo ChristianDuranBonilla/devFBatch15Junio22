@@ -80,3 +80,15 @@ DEFINICIÒN:
   Es una representación de árbol de la estructura sintáctica abstracta del texto
   (a menudo código fuente) escrito en un lenguaje formal. Cada nodo del árbol
   denota una construcción que ocurre en el texto.
+
+===============================================================================================================
+DEFINICIÒN: 
+
+* TRANSPILADOR:
+  
+  Transpilador es un tipo especial de compilador que
+  traduce de un lenguaje fuente a otro fuente también
+  de un nivel de abstracción parecido. Se diferencia de
+  los compiladores tradicionales en que estos reciben
+  como entrada ficheros conteniendo código fuente y
+  generan código máquina del más bajo nivel.
